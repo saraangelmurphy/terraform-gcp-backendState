@@ -15,7 +15,7 @@ Edit `main.tf` and substitute `[myorganization]` for your GCP project and storag
 
 Edit `state_buckets.tf` with the project name of the bucket you want to store your state file in and the project owner group that will be granted read/write permission to the bucket. The bucket will be automatically named `tf-state-[project_name]` on creation.
 
-#Configuring the terraform backend provider
+# Configuring the terraform backend provider
 Once the backend state bucket has been created, edit `main.tf` in your terraform project to include the following, editing the bucket name and required_version as appropriate:
 
 ```terraform {
